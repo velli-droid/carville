@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <svg class="icon">
+              <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <a href="#" class="header__nav-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#link-burger"></use>
+                </svg>
+                Все фильтры
+              </a>
+              <a href="#" class="header__nav-link">
+                Автохимия
+              </a>
+              <a href="#" class="header__nav-link">
+                Технические жидкости
+              </a>
+              <a href="#" class="header__nav-link">
+                Вся продукция бренда
+              </a>
+              <a href="#" class="header__nav-link">
+                Гарантии
+              </a>
+              <a href="#" class="header__nav-link">
+                Новости
+              </a>
+            </nav>
+            <div class="header__actions">
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                </svg>
+                <span>Прайс</span>
+              </a>
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                </svg>
+                <span>Каталог</span>
+              </a>
+              <a href="#" class="header__actions-link favorites active">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__mobile-btns">
+            <a href="#" class="favorites active">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+              </svg>
+            </a>
+            <div class="header__catalog-btn js-header-catalog-btn">
+              Каталог
+            </div>
+            <div class="header__burger js-header-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__nav header__nav--mobile js-header-menu">
+            <a href="#" class="header__nav-link">
+              <span>Продукция</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Автохимия</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Технические жидкости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Вся продукция</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Гарантии</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Новости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Прайс</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Каталог</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Точки продаж</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Материалы
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Контакты
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              О компании
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Вопрос/ответ
+            </a>
+          </div>
+          <div class="header__catalog js-catalog-menu">
+            <a href="#" class="header__catalog-link">
+              <span>Воздушные фильтры</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Масляные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Топливные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Салонные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <div class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            Сarville Racing
+                        </a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            Каталог
+                        </a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <span>Фильтр масляной</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="s-product">
+          <div class="container">
+            <div class="s-product__inner">
+              <div class="s-product__head">
+                <div class="s-product__title page-title">
+                  <h1>ФИЛЬТР МАСЛЯной CRL9142</h1>
+                </div>
+                <div class="s-product__actions">
+                  <div class="s-product__actions-item">
+                    <svg class="icon">
+                      <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                    </svg>
+                  </div>
+                  <div class="s-product__actions-item">
+                    <svg class="icon">
+                      <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="s-product__intro">
+                <div class="s-product__gallery product-gallery js-product-gallery">
+                  <div class="product-gallery__status">
+                    Скоро приедет
+                  </div>
+                  <div class="product-gallery__wrapper">
+                    <div class="product-gallery__swiper swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="product-gallery__thumbs swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-thumb-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-thumb-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-thumb-1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/img/gallery-thumb-1.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="s-product__features">
+                  <div class="s-product__features-wrapper">
+                    <div class="s-product__features-head">
+                      Характеристики
+                    </div>
+                    <div class="s-product__features-list">
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Группа
+                        </span>
+                        <span class="s-product__features-value">
+                          Воздушные круглые
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Тип
+                        </span>
+                        <span class="s-product__features-value">
+                          Цилиндрические
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Высота, мм
+                        </span>
+                        <span class="s-product__features-value">
+                          122
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Наружный диаметр, мм
+                        </span>
+                        <span class="s-product__features-value">
+                          161
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Внутренний диаметр, мм
+                        </span>
+                        <span class="s-product__features-value">
+                          78
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Статус
+                        </span>
+                        <span class="s-product__features-value">
+                          в ассортименте
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Комплектность
+                        </span>
+                        <span class="s-product__features-value">
+                          1 шт.
+                        </span>
+                      </div>
+                      <div class="s-product__features-item">
+                        <span class="s-product__features-prop">
+                          Комментарий
+                        </span>
+                        <span class="s-product__features-value">
+                          С предочистителем
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="s-product__bage">
+                    <div class="s-product__bage-pic">
+                      <img src="../assets/img/TecDoc-Log.png" alt="">
+                    </div>
+                    <div class="s-product__bage-text">
+                      В базе знаний каталога запчастей
+                    </div>
+                  </div>
+                </div>
+                <div class="s-product__prices">
+                  <div class="s-product__price">
+                    <span class="s-product__price-value">
+                      1 620 
+                      <svg class="icon">
+                        <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                      </svg>
+                    </span>
+                    <div class="s-product__price-text">
+                      Рекомендуемая розничная цена
+                    </div>
+                  </div>
+                  <div class="s-product__prices-links">
+                    <a href="#" class="s-product__prices-link btn btn_secondary">
+                      OZON
+                    </a>
+                    <a href="#" class="s-product__prices-link btn btn_secondary">
+                      WILDBERES
+                    </a>
+                    <a href="#" class="s-product__prices-link btn btn_secondary">
+                      AUTO.DOC
+                    </a>
+                    <a href="#" class="s-product__prices-link btn">
+                      Все маркетплейсы
+                    </a>
+                    <a href="#" class="s-product__prices-link btn">
+                      ДИСТРИБЬЮТОРЫ
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-accordion"> 
+          <div class="container">
+            <div class="product-accordion__inner">
+              <div class="product-accordion__accordion js-accordion">
+                <div class="product-accordion__item js-accordion-item">
+                  <div class="product-accordion__head js-accordion-head">
+                    
+                  </div>
+                  <div class="product-accordion__body js-accordion-body">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="product-tabs">
+          <div class="container">
+            <div class="product-tabs__inner">
+              <div class="product-tabs__tabs js-tabs">
+                <div class="product-tabs__nav">
+                  <a href="#" class="product-tabs__nav-link active js-tabs-link" data-target="pane-1">
+                    Применяемость
+                  </a>
+                  <a href="#" class="product-tabs__nav-link js-tabs-link" data-target="pane-2">
+                    Номера ОЕМ
+                  </a>
+                </div>
+                <div class="product-tabs__content">
+                  <div class="product-tabs__pane js-tabs-pane display active" data-pane-id="pane-1">
+                    <div class="product-table">
+                      <form action="#" class="product-table__filters">
+                        <div class="product-table__radios">
+                          <div class="product-table__radio">
+                            <input type="radio" class="product-table__radio-input" checked name="product-radio" id="product-radio-1">
+                            <label for="product-radio-1" class="product-table__radio-label">
+                              KAMAZ
+                            </label>
+                          </div>
+                          <div class="product-table__radio">
+                            <input type="radio" class="product-table__radio-input" name="product-radio" id="product-radio-2">
+                            <label for="product-radio-2" class="product-table__radio-label">
+                              LADA
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="product-table__wrapper">
+                        <table class="product-table__table">
+                          <thead>
+                            <tr>
+                              <td>
+                                Марка
+                              </td>
+                              <td>
+                                Модель
+                              </td>
+                              <td>
+                                Двигатель
+                              </td>
+                              <td>
+                                Год выпуска
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="product-table__title">
+                        Дополнительная информация
+                      </div>
+                      <div class="product-table__wrapper product-table__wrapper--half">
+                        <table class="product-table__table">
+                          <thead>
+                            <tr>
+                              <td>
+                                Марка
+                              </td>
+                              <td>
+                                Модель
+                              </td>
+                              <td>
+                                Двигатель
+                              </td>
+                              <td>
+                                Год выпуска
+                              </td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                KAMAZ
+                              </td>
+                              <td>
+                                6460
+                              </td>
+                              <td>
+                                11.76 / 10.85
+                              </td>
+                              <td>
+                                2000-н.в
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="product-disclaimer">
+                      <div class="product-disclaimer__text">
+                        Информация по применяемости изделий к конкретной модели автомобиля является справочной
+                      </div>
+                      <div class="product-disclaimer__icon">
+                        <img src="../assets/img/disclaimer-icon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-tabs__pane js-tabs-pane" data-pane-id="pane-2">
+                    <div class="product-numbers">
+                      <div class="product-numbers__head">
+                        <form action="#" class="product-numbers__search">
+                          <input type="text" class="product-numbers__search-input" placeholder="88450-12290">
+                          <button type="submit" class="product-numbers__search-submit">
+                            <svg class="icon">
+                              <use xlink:href="../assets/svg/sprite.svg#search-loupe"></use>
+                            </svg>
+                          </button>
+                        </form>
+                        <div class="product-numbers__download">
+                          <div class="product-numbers__download-tooltip">
+                            Скачать ОЕМ номера 
+                          </div>
+                          <a href="#" class="product-numbers__download-link">
+                            <svg class="icon">
+                              <use xlink:href="../assets/svg/sprite.svg#download-fancy"></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-numbers__grid">
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                        <div class="product-numbers__group">
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                          <a href="#" class="product-numbers__item">
+                            88450-12290
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <a href="/" class="footer__logo">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="footer__menu">
+              <div class="footer__actions">
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                  </svg>
+                  <span>Скачать каталог</span>
+                </a>
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                  </svg>
+                  <span>Прайс-лист</span>
+                </a>
+              </div>
+              <nav class="footer__nav">
+                <a href="#" class="footer__nav-link">
+                  Фильтры
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Автохимия
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Технические жидкости
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Вся продукция
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              2011-2023© ООО "ЭРЛАЙН ". Производитель автохимии. Все права защищены. Реализация в РФ и СНГ.
+            </div>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#yt"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#r"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#d2"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>

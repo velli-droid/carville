@@ -1,0 +1,20 @@
+.dropdown {
+    &__head {
+        cursor: pointer;
+    }   
+    &__body {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    &.active {
+        .dropdown {
+            &__body {
+                opacity: 1;
+                overflow: visible;
+                max-height: none;
+            }
+        }
+    }
+}

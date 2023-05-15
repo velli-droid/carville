@@ -1,0 +1,87 @@
+.news-swiper {
+    position: relative;
+    z-index: auto;
+    padding: 5rem 0 12rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 29.8rem;
+        background: #000000;
+        z-index: -1;
+    }
+    &__inner {
+        position: relative;
+        z-index: auto;
+    }
+    &__title {
+        width: calc(100% - 15rem);
+        margin-bottom: 5rem;
+        color: #FFFFFF;
+        line-height: 2;
+    }
+    &__swiper {
+        z-index: 0;
+        .swiper-wrapper {
+            align-items: stretch;
+        }
+        .swiper-slide {
+            height: initial;
+        }
+    }
+    &__controls {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        z-index: 0;
+    }
+    &__prev {
+        margin-right: 2.7rem;
+    }
+    &__link {
+        display: block;
+        width: fit-content;
+        padding: 1.7rem 4.7rem;
+        margin: 8rem auto 0;
+        font-weight: 500;
+        font-size: 2.6rem;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: var(--primary-color);
+        border-radius: .5rem;
+        &:hover {
+            background: var(--primary-color-hover);
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        padding: 1.5rem 0 4rem;
+        &::before {
+            display: none;
+        }
+        &__title {
+            width: calc(100% - 7rem);
+            color: #000000;
+            line-height: 1.25;
+            margin-bottom: 4rem;
+        }
+        &__swiper {
+            position: relative;
+            width: calc(100% + var(--container-padding) * 2);
+            left: calc(0rem - var(--container-padding));
+            padding: 0 var(--container-padding);
+        }
+        &__prev {
+            margin-right: 1.64rem;
+        }
+        &__link {
+            display: none;
+        }
+    }
+}

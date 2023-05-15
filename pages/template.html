@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <svg class="icon">
+              <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <a href="#" class="header__nav-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#link-burger"></use>
+                </svg>
+                Все фильтры
+              </a>
+              <a href="#" class="header__nav-link">
+                Автохимия
+              </a>
+              <a href="#" class="header__nav-link">
+                Технические жидкости
+              </a>
+              <a href="#" class="header__nav-link">
+                Вся продукция бренда
+              </a>
+              <a href="#" class="header__nav-link">
+                Гарантии
+              </a>
+              <a href="#" class="header__nav-link">
+                Новости
+              </a>
+            </nav>
+            <div class="header__actions">
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                </svg>
+                <span>Прайс</span>
+              </a>
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                </svg>
+                <span>Каталог</span>
+              </a>
+              <a href="#" class="header__actions-link favorites active">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__mobile-btns">
+            <a href="#" class="favorites active">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+              </svg>
+            </a>
+            <div class="header__catalog-btn js-header-catalog-btn">
+              Каталог
+            </div>
+            <div class="header__burger js-header-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__nav header__nav--mobile js-header-menu">
+            <a href="#" class="header__nav-link">
+              <span>Продукция</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Автохимия</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Технические жидкости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Вся продукция</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Гарантии</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Новости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Прайс</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Каталог</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Точки продаж</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Материалы
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Контакты
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              О компании
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Вопрос/ответ
+            </a>
+          </div>
+          <div class="header__catalog js-catalog-menu">
+            <a href="#" class="header__catalog-link">
+              <span>Воздушные фильтры</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Масляные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Топливные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Салонные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <a href="/" class="footer__logo">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="footer__menu">
+              <div class="footer__actions">
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                  </svg>
+                  <span>Скачать каталог</span>
+                </a>
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                  </svg>
+                  <span>Прайс-лист</span>
+                </a>
+              </div>
+              <nav class="footer__nav">
+                <a href="#" class="footer__nav-link">
+                  Фильтры
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Автохимия
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Технические жидкости
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Вся продукция
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              2011-2023© ООО "ЭРЛАЙН ". Производитель автохимии. Все права защищены. Реализация в РФ и СНГ.
+            </div>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#yt"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#r"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#d2"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>

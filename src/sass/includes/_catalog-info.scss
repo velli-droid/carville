@@ -1,0 +1,43 @@
+.catalog-info {
+    padding: 2.5rem 0 6.7rem;
+    &__inner {
+        display: grid;
+    }
+    &__content {
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: .8;
+            letter-spacing: 0.02em;
+            color: var(--primary-color);
+            margin-bottom: 2.9rem;
+        }
+        b {
+            display: block;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 1.25;
+            max-width: 76.1rem;
+            margin-bottom: 2.7rem;
+        }
+        ul {
+            padding-left: 2rem;
+            li {
+                display: list-item;
+                list-style: disc;
+                font-size: 1.5rem;
+                line-height: 1.07;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        padding: 2.5rem 0;
+        &__inner {
+            grid-template-columns: 1fr;
+        }
+        &__media {
+            display: none;
+        }
+    }
+}

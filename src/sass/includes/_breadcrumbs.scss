@@ -1,0 +1,59 @@
+.breadcrumbs {
+    padding: 4rem 0 1.5rem;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        white-space: nowrap;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #AFAFAF;
+        margin-right: 5.6rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -3.6rem;
+            transform: translateY(-50%);
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            background: url(/assets/svg/breadcrumbs-separator.svg) no-repeat center;
+            background-size: contain;
+        }
+        &:last-child {
+            margin-right: 0;
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &__link {
+        color: #4B4D59;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+    @media only screen and (max-width: 640px) { 
+        padding: .7rem 0;
+        background: #FFFFFF;
+        &__item {
+            margin-right: 2.2rem;
+            display: none;
+            &:last-child, 
+            &:first-child {
+                display: block;
+            }
+            &::after {
+                content: '/';
+                right: -1.5rem;
+                width: auto;
+                height: auto;
+                background: none;
+            }
+        }
+    }
+}

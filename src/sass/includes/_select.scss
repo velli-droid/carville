@@ -1,0 +1,7 @@
+.select {
+    position: relative;
+    z-index: auto;
+    &__dropdown {
+        z-index: 5;
+    }
+}

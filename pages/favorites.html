@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="header__logo">
+            <svg class="icon">
+              <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <a href="#" class="header__nav-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#link-burger"></use>
+                </svg>
+                Все фильтры
+              </a>
+              <a href="#" class="header__nav-link">
+                Автохимия
+              </a>
+              <a href="#" class="header__nav-link">
+                Технические жидкости
+              </a>
+              <a href="#" class="header__nav-link">
+                Вся продукция бренда
+              </a>
+              <a href="#" class="header__nav-link">
+                Гарантии
+              </a>
+              <a href="#" class="header__nav-link">
+                Новости
+              </a>
+            </nav>
+            <div class="header__actions">
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                </svg>
+                <span>Прайс</span>
+              </a>
+              <a href="#" class="header__actions-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                </svg>
+                <span>Каталог</span>
+              </a>
+              <a href="#" class="header__actions-link favorites active">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__mobile-btns">
+            <a href="#" class="favorites active">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+              </svg>
+            </a>
+            <div class="header__catalog-btn js-header-catalog-btn">
+              Каталог
+            </div>
+            <div class="header__burger js-header-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="header__nav header__nav--mobile js-header-menu">
+            <a href="#" class="header__nav-link">
+              <span>Продукция</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Автохимия</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Технические жидкости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Вся продукция</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Гарантии</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Новости</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Прайс</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Каталог</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link">
+              <span>Точки продаж</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Материалы
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Контакты
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              О компании
+            </a>
+            <a href="#" class="header__nav-link header__nav-link_primary">
+              Вопрос/ответ
+            </a>
+          </div>
+          <div class="header__catalog js-catalog-menu">
+            <a href="#" class="header__catalog-link">
+              <span>Воздушные фильтры</span> 
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Масляные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Топливные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__catalog-link">
+              <span>Салонные фильтры</span>
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#menu-arrow"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__inner">
+                    <div class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            Сarville Racing
+                        </a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            Каталог
+                        </a>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        Избранное
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="s-favorites">
+            <div class="container">
+                <div class="s-favorites__inner">
+                    <div class="s-favorites__title page-title">
+                        <h1>
+                            Избранные товары
+                        </h1>
+                    </div>
+                    <form action="#" class="s-favorites__filters">
+                        <div class="s-favorites__checkboxes">
+                            <div class="s-favorites__checkbox">
+                                <input type="checkbox" class="s-favorites__checkbox-input" checked name="type" id="favorites-checkbox-1">
+                                <label for="favorites-checkbox-1" class="s-favorites__checkbox-label">
+                                    Масляный фильтр
+                                </label>
+                            </div>
+                            <div class="s-favorites__checkbox">
+                                <input type="checkbox" class="s-favorites__checkbox-input" name="type" id="favorites-checkbox-2">
+                                <label for="favorites-checkbox-2" class="s-favorites__checkbox-label">
+                                    Салонный фильтр
+                                </label>
+                            </div>
+                            <div class="s-favorites__checkbox">
+                                <input type="checkbox" class="s-favorites__checkbox-input" name="type" id="favorites-checkbox-3">
+                                <label for="favorites-checkbox-3" class="s-favorites__checkbox-label">
+                                    Топливный фильтр
+                                </label>
+                            </div>
+                            <div class="s-favorites__checkbox">
+                                <input type="checkbox" class="s-favorites__checkbox-input" name="type" id="favorites-checkbox-4">
+                                <label for="favorites-checkbox-4" class="s-favorites__checkbox-label">
+                                    Воздушный фильтр
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="s-favorites__items-count">
+                        Всего товаров: 12
+                    </div>
+                    <div class="s-favorites__grid">
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__swiper swiper js-product-card-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/img/product-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="product-card__content">
+                                <div class="product-card__title">
+                                    Фильтр масляный
+                                </div>
+                                <div class="product-card__row">
+                                    <div class="product-card__code">
+                                        <span class="product-card__code-name">Код товара:</span>
+                                        <span class="product-card__code-value">АЕАТ3002</span> 
+                                        <div class="product-card__code-copy">
+                                            <svg class="icon">
+                                                <use xlink:href="../assets/svg/sprite.svg#copy"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__favorires active">
+                                        <svg class="icon">
+                                            <use xlink:href="../assets/svg/sprite.svg#favorites"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <div class="product-card__text">
+                                    OEM НОМЕР: SMD354804, MD 313937, MD 314375, MD 354804, A003TA0491, A003TA0491A, A003TA2391, A003TA2391A, A003TA2391AM, A005TA0391, A005TA...
+                                </div>
+                                <div class="product-card__tags">
+                                    <div class="product-card__tags-title">
+                                        GAZ
+                                    </div>
+                                    <div class="product-card__tags-list">
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универ...
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            VOLGA универсал (3102)
+                                        </a>
+                                        <a href="#" class="product-card__tag">
+                                            SOBOL (275...
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price">
+                                        <span class="product-card__price-label">
+                                            Рекомендуемая цена
+                                        </span>
+                                        <span class="product-card__price-value">
+                                            8 910 руб.
+                                        </span>
+                                    </div>
+                                    <a href="#" class="product-card__btn btn">
+                                        ГДЕ КУПИТЬ
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-favorites__pagination pagination">
+                        <div class="pagination__list">
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link active">
+                                    1
+                                </a>
+                            </div>
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link ">
+                                    2
+                                </a>
+                            </div>
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link ">
+                                    3
+                                </a>
+                            </div>
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link ">
+                                    4
+                                </a>
+                            </div>
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link ">
+                                    5
+                                </a>
+                            </div>
+                            <div class="pagination__item pagination__item_input">
+                                <input type="text" class="pagination__input" placeholder="№">
+                            </div>
+                            <div class="pagination__item">
+                                <a href="#" class="pagination__link ">
+                                    32
+                                </a>
+                            </div>
+                            <div class="pagination__item pagination__item_next">
+                                <a href="#" class="pagination__link ">
+                                    <svg class="icon">
+                                        <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <a href="/" class="footer__logo">
+              <svg class="icon">
+                <use xlink:href="../assets/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="footer__menu">
+              <div class="footer__actions">
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#pdf"></use>
+                  </svg>
+                  <span>Скачать каталог</span>
+                </a>
+                <a href="#" class="footer__actions-link">
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#rub"></use>
+                  </svg>
+                  <span>Прайс-лист</span>
+                </a>
+              </div>
+              <nav class="footer__nav">
+                <a href="#" class="footer__nav-link">
+                  Фильтры
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Автохимия
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Технические жидкости
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer__nav-link">
+                  Вся продукция
+                  <svg class="icon">
+                    <use xlink:href="../assets/svg/sprite.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__copyright">
+              2011-2023© ООО "ЭРЛАЙН ". Производитель автохимии. Все права защищены. Реализация в РФ и СНГ.
+            </div>
+            <div class="footer__socials">
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#vk"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#yt"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#r"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#d2"></use>
+                </svg>
+              </a>
+              <a href="#" class="footer__socials-link">
+                <svg class="icon">
+                  <use xlink:href="../assets/svg/sprite.svg#tg"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>

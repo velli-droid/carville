@@ -1,0 +1,242 @@
+.search-accordion {
+    padding: 1.5rem 0 8rem;
+    &__title {
+        margin-bottom: 4.4rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+        margin-bottom: 1.3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &.active {
+            .search-accordion {
+                &__body {
+                    border: .1rem solid #DFDFDF;
+                    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+                    margin: .3rem 0 0;
+                    max-height: none;
+                }
+                &__head {
+                    &-icon {
+                        .icon {
+                            stroke: #000000;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    &__head {
+        position: relative;
+        display: flex;
+        background: #FFFFFF;
+        border: .1rem solid #E7E7E7;
+        border-radius: .5rem;
+        padding: 1.1rem 11.2rem 1.4rem 1.4rem;
+        cursor: pointer;
+        &-col {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            margin-right: 2rem;
+            &:first-child {
+                flex-basis: auto;
+                width: 20.8rem;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-prop {
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 1.05;
+            color: #999999;
+            margin-bottom: .8rem;
+        }
+        &-value {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.25;
+            color: #333333;
+        }
+        &-icon {
+            position: absolute;
+            top: 50%;
+            right: 2.8rem;
+            transform: translateY(-50%);
+            display: block;
+            width: 3.5rem;
+            height: 2.5rem;
+            .icon {
+                display: block;
+                width: 100%;
+                height: 100%;
+                fill: none;
+                stroke: var(--primary-color);
+            }
+        }
+    }
+    &__body {
+        background: #FFFFFF;
+        border-radius: .5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease, margin .3s ease;
+        &-wrapper {
+            display: flex;
+            padding: 2.5rem 0 1.6rem;
+        }
+        &-col {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 0 4.4rem 0;
+            border-right: .1rem solid #AFAFAF;
+            &:first-child {
+                padding-left: 1.9rem;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.25;
+            color: #333333;
+            margin-bottom: 1.9rem;
+            &:only-child {
+                margin-bottom: 0;
+            }
+            .icon {
+                display: block;
+                width: 1.8rem;
+                height: 1.8rem;
+                object-fit: contain;
+                flex-shrink: 0;
+                margin-right: 1rem;
+                fill: currentColor;
+            }
+        }
+        &-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-name {
+            font-size: 1.6rem;
+            line-height: 1.25px;
+            color: #000000;
+        }
+        &-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 1.6rem;
+        }
+        &-tag {
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.38;
+            color: #FFFFFF;
+            background: var(--primary-color);
+            border-radius: .5rem;
+            padding: 0 1.7rem;
+        }
+        &-action {
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-right: 1.4rem;
+            color: var(--primary-color);
+            &.favorites {
+                .icon {
+                    fill: none;
+                    stroke: currentColor;
+                }
+            }
+            &.photo {
+                width: 1.7rem;
+            }
+            &.info {
+                .icon {
+                    fill: none;
+                    stroke: currentColor;
+                }
+            }
+            .icon {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                fill: currentColor;
+            }
+        }
+    }
+    &__pagination {
+        margin-top: 2.2rem;
+    }
+    @media only screen and (max-width: 640px) { 
+        padding: 1.5rem 0 2rem;
+        &__title {
+            margin-bottom: 1.5rem;
+        }
+        &__item {
+            margin-bottom: .8rem;
+        }
+        &__head {
+            padding: 1.1rem 2.5rem 1.4rem 1rem;
+            &-col {
+                display: none;
+                &.mob {
+                    display: flex;
+                    margin-right: 0;
+                }
+                &:first-child {
+                    width: auto;
+                }
+            }
+            &-prop {
+                font-size: 1.2rem;
+                margin-bottom: .6rem;
+            }
+            &-value {
+                font-size: 1.4rem;
+            }
+            &-icon {
+                width: 1.5rem;
+                height: 1.5rem;
+                right: .9rem;
+            }
+        }
+        &__body {
+            &-wrapper {
+                flex-direction: column;
+                padding: 0 1.1rem;
+            }
+            &-col {
+                padding: 1.8rem 0 1.4rem;
+                border-right: none;
+                border-bottom: .1rem solid #AFAFAF;
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+            &-action {
+                margin-right: 1rem;
+            }
+        }
+        &__pagination {
+            margin-top: 1.7rem;
+        }
+    }
+}

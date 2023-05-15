@@ -1,0 +1,32 @@
+.product-tabs {
+    padding: 1.5rem 0 5rem;
+    &__nav {
+        display: flex;
+        align-items: center;
+        &-link {
+            display: block;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 2.9rem;
+            color: #AFAFAF;
+            margin-right: 3.5rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                color: black;
+            }
+        }
+    }
+    &__pane {
+        display: none;
+        opacity: 0;
+        transition: opacity .3s ease;
+        &.display {
+            display: block;
+        }
+        &.active {
+            opacity: 1;
+        }
+    }
+}

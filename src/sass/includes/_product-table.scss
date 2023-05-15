@@ -1,0 +1,109 @@
+.product-table {
+    display: flex;
+    flex-direction: column;
+    &__filters {
+        margin-top: 4.5rem;
+    }
+    &__radios {
+        display: flex;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+        color: #1A1919;
+        margin: 1.6rem 0 2.7rem;
+    }
+    &__radio {
+        margin-right: 1.23rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-input {
+            display: none;
+            &:checked ~ .product-table {
+                &__radio {
+                    &-label {
+                        background: var(--primary-color);
+                    }
+                }
+            }
+        }
+        &-label {
+            display: block;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            background: #C1C1C1;
+            box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.1);
+            border-radius: .5rem;
+            text-align: center;
+            color: #FCFCFC;
+            padding: .7rem;
+            cursor: pointer;
+            min-width: 8.3rem;
+            transition: .3s ease;
+        }
+    }
+    &__wrapper {
+        background: #FFFFFF;
+        box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+        border-radius: 1.2rem;
+        padding: 2.8rem 3.8rem;
+        max-height: 52.6rem;
+        overflow: auto;
+        margin-bottom: 3rem;
+        &::-webkit-scrollbar {
+            width: 2rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #F8F8F8;
+            border-radius: .8rem;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--primary-color);
+            border-radius: 1rem;
+        }
+        &--half {
+            max-height: 27.8rem;
+        }
+    }
+    &__table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+        td {
+            text-align: center;
+            &:first-child {
+                text-align: left;
+            }
+        }
+        thead {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #373737;
+            td {
+                padding-bottom: 4rem;
+            }
+        }
+        tbody {
+            font-weight: 500;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            color: #717171;
+            td {
+                padding-bottom: 3.8rem;
+            }
+            tr {
+                &:last-child {
+                    td {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
